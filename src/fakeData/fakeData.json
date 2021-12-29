@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Chittagong to Dhaka",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT5oD5anGAybcPXH0n3Ycood9uBP75wHqFMg&usqp=CAU",
+        "businessClassPrice": 150,
+        "economyClassPrice": 100
+    },
+    {
+        "name": "Chittagong to UAE",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT5oD5anGAybcPXH0n3Ycood9uBP75wHqFMg&usqp=CAU",
+        "businessClassPrice": 300,
+        "economyClassPrice": 200
+    },
+    {
+        "name": "Chittagong to USA",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT5oD5anGAybcPXH0n3Ycood9uBP75wHqFMg&usqp=CAU",
+        "businessClassPrice": 750,
+        "economyClassPrice": 450
+    },
+    {
+        "name": "Dhaka to London",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT5oD5anGAybcPXH0n3Ycood9uBP75wHqFMg&usqp=CAU",
+        "businessClassPrice": 500,
+        "economyClassPrice": 380
+    },
+    {
+        "name": "Dhaka to India",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT5oD5anGAybcPXH0n3Ycood9uBP75wHqFMg&usqp=CAU",
+        "businessClassPrice": 300,
+        "economyClassPrice": 200
+    }
+]
