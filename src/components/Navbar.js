@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [count, setCount] = useState(0);
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><h2>Ecommerce App</h2></a>
+                    <a class="navbar-brand" href="#"><h2>React E-Commerce</h2></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>

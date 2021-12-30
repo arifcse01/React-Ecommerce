@@ -13,6 +13,7 @@ import BusinessClass from './components/BusinessClass/BusinessClass';
 import EconomyClass from './components/EconomyClass/EconomyClass';
 import Navbar from './components/Navbar';
 import Products from './components/Products/Products';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Home></Home>
         <Products />
       </Route>
+      <Route path="/productDetails/:id" component={ProductDetails} />
       <Route path="/businessClass/:id">
         <BusinessClass></BusinessClass>
       </Route>
