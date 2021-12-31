@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { addCart } from '../../redux/action/action';
 
 const ProductDetails = () => {
 
     const {id} = useParams();
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(false);
+
+    const dispatch = useDispatch();
+
+    const addProduct = (product)=>{
+        dispatch(addCart(product));
+    }
 
     useEffect(()=>{
         const getProducts = async ()=>{
@@ -30,7 +38,7 @@ const ProductDetails = () => {
                     <p className="lead fw-bolder">Rating: {product.rating && product.rating.rate} <i className="fa fa-star"></i></p>
                     <p className="display-6 fw-bold text-danger">${product.price}</p>  
                     <p className="lead">{product.description}</p>  
-                    <button className="btn btn-outline-dark me-2">Add To Cart</button>
+                    <button className="btn btn-outline-dark me-2" onClick={()=>addProduct(product)}>Add To Cart</button>
                     <button className="btn btn-dark">Go To Cart</button>                
                 </div>
             </div>            

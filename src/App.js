@@ -14,6 +14,8 @@ import EconomyClass from './components/EconomyClass/EconomyClass';
 import Navbar from './components/Navbar';
 import Products from './components/Products/Products';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import store from './redux/reducer/store';
+import { Provider } from 'react-redux';
 
 
 
@@ -22,6 +24,7 @@ function App() {
 
   return (
     <Router>
+      <Provider store = {store}>
       <Navbar />
     <Switch>
       <Route exact path="/">
@@ -39,6 +42,7 @@ function App() {
        
       </Route>
     </Switch>
+    </Provider>
   </Router>
   );
 }
